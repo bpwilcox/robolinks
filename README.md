@@ -27,6 +27,7 @@ At this time, this class only supports forward kinematics of the end effector an
 <br />
 To get the end effector position and orientation:
 ```
+Q = np.column_stack(np.deg2rad([45,30,50]))
 Position, Orientation = bot.fkin(Q)
 ```
 To get array of all joint positions (and optionally orientations):
@@ -38,3 +39,4 @@ The class supports basic plotting of the serial link manipulator:
 ```
 ax = bot.plot3D(Q, elev = 45, azim = 240)
 ```
+![robolink_plot](https://user-images.githubusercontent.com/22353511/54789327-5cefd800-4bef-11e9-9028-be62963c9095.png)

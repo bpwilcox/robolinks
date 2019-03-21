@@ -4,11 +4,11 @@
 Links are defined by 3 parameters from the DH-parameter convention (d,a,alpha).
 To create a link:
 ```
-Link1 = Link(d,a,alpha)
+Link1 = RobotModels.Link(d,a,alpha)
 ```
 
 ## Create Serial Link manipulator
-To create a serial link manipulator, simple add links to a list and pass to SerialLink class:
+To create a serial link manipulator, simply add Link objects to a list and pass to SerialLink class:
 
 ```
 Link1 = RobotModels.Link(0,0,np.pi/2)
